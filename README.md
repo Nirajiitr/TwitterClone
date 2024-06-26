@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Twitter Clone
 
 ## Frontend Part
@@ -11,7 +11,7 @@ This is the frontend part of the Twitter clone, created using ReactJS.
 
 To get started with the project, you need to have Node.js and npm installed. Clone the repository and install the dependencies:
 
-```bash
+```
 git clone https://github.com/Nirajiitr/TwitterClone.git
 cd TwitterClone/frontend
 npm install
@@ -21,7 +21,7 @@ npm install
 
 In the project directory, you can run:
 
-```bash
+```
 npm start
 ```
 
@@ -33,7 +33,7 @@ This is the backend part of the Twitter clone, built using Node.js, Express, and
 
 To get started with the project, you need to have Node.js and npm installed. Clone the repository and install the dependencies:
 
-```bash
+```
 git clone https://github.com/Nirajiitr/TwitterClone.git
 cd TwitterClone/backend
 npm install
@@ -43,7 +43,7 @@ npm install
 
 In the project directory, you can run:
 
-```bash
+```
 nodemon index.js
 ```
 
@@ -56,4 +56,4 @@ Create a `.env` file in the root of your project and add the following environme
 ```
 MONGO_URI=your_mongodb_uri
 ```
-```
+
