@@ -1,6 +1,4 @@
 
-
-
 # Twitter Clone
 
 ## Frontend Part
@@ -54,6 +52,6 @@ This command runs the app in development mode using nodemon. The server will res
 Create a `.env` file in the root of your project and add the following environment variables:
 
 ```
-MONGO_URI=your_mongodb_uri
+MONGO_DB=your_mongodb_uri
 ```
 
