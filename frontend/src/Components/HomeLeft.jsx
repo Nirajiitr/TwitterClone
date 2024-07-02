@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../imgs/logo.svg";
+import postLogo from "../imgs/postLogo.svg";
 import { MdHomeFilled } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
@@ -9,63 +10,70 @@ import { IoBookmarkOutline } from "react-icons/io5";
 import { BsPeople } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 import { CiCircleMore } from "react-icons/ci";
-
+import { RiTwitterXLine } from "react-icons/ri";
 const HomeLeft = () => {
   return (
-    <div className="text-white w-[380px] border-x-[1px] border-slate-800">
-      <div className="flex flex-col  justify-center items-center">
-      <div className="w-[50%] ml-5 ">
-        <img src={logo} className="my-3 ml-3 size-9" alt="logo" />
-      
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <MdHomeFilled size="30px" />
-          <p className="text-xl font-bold ">Home</p>
-          
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <IoSearch size="30px" />
-          <p className="text-xl ">Explore</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <IoIosNotificationsOutline size="30px" />
-          <p className="text-xl ">Notifications</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <FaRegEnvelope size="25px" />
-          <p className="text-xl ">Messages</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <LuSquareSlash size="30px" />
-          <p className="text-xl ">Grok</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <IoBookmarkOutline size="30px" />
-          <p className="text-xl ">Bookmarks</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <BsPeople size="30px" />
-          <p className="text-xl ">Communities</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <img src={logo} className=" size-7" alt="logo" />
-          <p className="text-xl font-bold">Premium</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <CgProfile size="30px" />
-          <p className="text-xl ">Profile</p>
-        </div>
-        <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-full items-start justify-start">
-          <CiCircleMore size="30px" />
-          <p className="text-xl ">More</p>
-        </div>
-        
-          <button className="text-lg text-white font-bold self-center rounded-3xl p-3 bg-[#1D9BF0] w-60 my-2 "> Post</button>
-          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 gap-5 w-64 items-start justify-start">
-          <CgProfile size="50px" />
-          <p className="text-lg self-center ">Niraj Kumar</p>
-        </div>
-         
-        
+    <div className="text-white vsm:hidden ssm:block xl:w-[380px] xl:overflow-hidden border-x-[1px] border-slate-800 ">
+      <div className="flex ssm:flex-col  justify-center items-start p-2">
+        <div className="w-[60%]  ml-5">
+          <RiTwitterXLine className="my-3 ml-3 size-9" />
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <MdHomeFilled className="size-7 " />
+            <p className="text-xl vsm:hidden xl:block font-bold ">Home</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <IoSearch className="size-7 " />
+            <p className="text-xl vsm:hidden xl:block ">Explore</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <IoIosNotificationsOutline className="size-7 " />
+            <p className="text-xl vsm:hidden xl:block ">Notifications</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <FaRegEnvelope size="25px" />
+            <p className="text-xl vsm:hidden xl:block ">Messages</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <LuSquareSlash className="size-7  " />
+            <p className="text-xl vsm:hidden xl:block ">Grok</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer ssm:p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <IoBookmarkOutline className="size-7 vsm:hidden ssm:block " />
+            <p className="text-xl vsm:hidden xl:block ">Bookmarks</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <BsPeople className="size-7 " />
+            <p className="text-xl vsm:hidden xl:block ">Communities</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer ssm:p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <img
+              src={logo}
+              className=" size-7 vsm:hidden ssm:block"
+              alt="logo"
+            />
+            <p className="text-xl vsm:hidden xl:block font-bold">Premium</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer ssm:p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <CgProfile className="size-7 vsm:hidden ssm:block " />
+            <p className="text-xl vsm:hidden xl:block ">Profile</p>
+          </div>
+          <div className="flex rounded-3xl cursor-pointer ssm:p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
+            <CiCircleMore className="size-7 vsm:hidden ssm:block " />
+            <p className="text-xl vsm:hidden xl:block ">More</p>
+          </div>
+          <div className="flex vsm:hidden ssm:block vsm:rounded-full xl:rounded-3xl cursor-pointer p-3 w-10 xl:w-60 bg-[#1D9BF0]  justify-start">
+            <button className="xl:block  vsm:hidden text-lg text-white font-bold text-center mx-[auto]">
+              Post
+            </button>
+
+            <img src={postLogo} className="vsm:block xl:hidden" alt="logo" />
+          </div>
+          <div className="flex rounded-3xl cursor-pointer p-3 absolute bottom-0 hover:bg-slate-900 xl:gap-5 w-64 items-start justify-start">
+            <CgProfile className="size-12 vsm:hidden ssm:block" />
+            <p className="text-lg vsm:hidden xl:block self-center ">
+              Niraj Kumar
+            </p>
+          </div>
         </div>
       </div>
     </div>
