@@ -14,7 +14,7 @@ import Posts from "./Posts";
 const HomeCenter = () => {
   return (
     <div className="text-white h-screen sm:w-[600px] ssm:w-[450px] border-x-[1px] border-slate-800">
-      <div className="w-full h-16 border-b-[1px] vsm:hidden  ssm:flex   border-slate-800">
+      <div className="w-full h-16 border-b-[1px] flex border-slate-800">
         <div className="hover:bg-gray-800 w-[50%] text-center pt-5">
           <Link to="/home">For you</Link>
         </div>
@@ -23,16 +23,16 @@ const HomeCenter = () => {
         </div>
       </div>
       <div className="h-full no-scrollbar overflow-auto">
-      <PostShare />
-      <Posts />
+        <PostShare />
+        <Posts />
       </div>
-      <div className="vsm:block ssm:hidden w-screen">
+      <div className="vsm:block ssm:hidden w-screen ">
         <div className="flex  p-3 ">
           <CgProfile className="size-10 " />
           <RiTwitterXLine className="size-10 mx-[auto]" />
         </div>
 
-        <div className="  flex fixed bottom-0 py-2 border-y-2 border-slate-700 justify-around w-full ">
+        <div className=" bg-black flex fixed bottom-0 py-2 border-y-2 border-slate-700 justify-around w-full ">
           <MdHomeFilled className="size-8 " />
 
           <IoSearch className="size-8 " />

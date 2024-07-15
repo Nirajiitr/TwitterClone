@@ -1,5 +1,6 @@
 import React from "react";
 import collage from "../imgs/collage.mp4";
+import photo from "../imgs/ankitPhoto.jpg";
 const Post = () => {
   return (
     <div className="w-full h-[450px]  border-b-[1px] border-slate-800">
@@ -24,11 +25,17 @@ const Post = () => {
             and looking for full-time/part-time/internship roles. i think we can
             help you out, so hit us up for an invite.
           </p>
-          <div className="w-full h-72">
-            <video className="h-full m-2 rounded-xl" controls>
-              <source src={collage} type="video/mp4" />
+          <div className="w-full h-72 mt-1 content-center ">
+            {/* <video className=" object-cover h-64 w-full  m-2 rounded-xl" controls>
+              <source src={collage} type="video/mp4"  />
+             
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <img
+              src={photo}
+              alt="post photo"
+              className=" h-64 w-full object-cover rounded-lg"
+            />
           </div>
 
           <div className="w-full"></div>

@@ -13,9 +13,9 @@ import { CiCircleMore } from "react-icons/ci";
 import { RiTwitterXLine } from "react-icons/ri";
 const HomeLeft = () => {
   return (
-    <div className="text-white vsm:hidden ssm:block xl:w-[380px] xl:overflow-hidden border-x-[1px] border-slate-800 ">
-      <div className="flex ssm:flex-col  justify-center items-start p-2">
-        <div className="w-[60%]  ml-5">
+    <div className="text-white vsm:hidden ssm:block xl:w-[380px] xl:overflow-hidden ">
+      <div className="flex ssm:flex-col  justify-center items-center p-2">
+        <div className="w-[60%]  ml-5 relative">
           <RiTwitterXLine className="my-3 ml-3 size-9" />
           <div className="flex rounded-3xl cursor-pointer p-3 hover:bg-slate-900 xl:gap-5 w-full items-start justify-start">
             <MdHomeFilled className="size-7 " />
@@ -68,8 +68,8 @@ const HomeLeft = () => {
 
             <img src={postLogo} className="vsm:block xl:hidden" alt="logo" />
           </div>
-          <div className="flex rounded-3xl cursor-pointer p-3 absolute bottom-0 hover:bg-slate-900 xl:gap-5 w-64 items-start justify-start">
-            <CgProfile className="size-12 vsm:hidden ssm:block" />
+          <div className="flex rounded-3xl cursor-pointer   p-3 absolute left-[-20px] bottom-[-90px] hover:bg-slate-900 xl:gap-5 w-64 items-start justify-start">
+            <CgProfile className="size-12 vsm:hidden ssm:block  " />
             <p className="text-lg vsm:hidden xl:block self-center ">
               Niraj Kumar
             </p>
