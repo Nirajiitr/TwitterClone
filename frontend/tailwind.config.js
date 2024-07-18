@@ -5,13 +5,14 @@ module.exports = {
   theme: {
     screens: {
       'vsm': '200px',
-      'sm': '640px',
+      'ssm' : "500px",
+      'sm': '690px',
       // => @media (min-width: 640px) { ... }
-    
+      
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      'lg': '1003px',
       // => @media (min-width: 1024px) { ... }
 
       'xl': '1280px',
@@ -21,7 +22,9 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
        
-    extend: {},
+    extend: {
+      scrollBehavior: ['scroll-smooth'],
+    },
   },
   plugins: [],
 }

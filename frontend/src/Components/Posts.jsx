@@ -3,7 +3,7 @@ import Post from './Post'
 
 const Posts = () => {
   return (
-    <div className=''>
+    <div className='scroll-smooth'>
         <Post />
         <Post />
         <Post />
